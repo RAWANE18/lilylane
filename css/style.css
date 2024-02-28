@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/flower.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.ctn {
+  height: 90vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 15px;
+  backdrop-filter: blur(30px);
+  font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.logo {
+  margin-right: auto;
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+#MenuItems {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#MenuItems a {
+  margin-right: 30px;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  color: rgb(248, 240, 240);
+  text-decoration: none;
+  padding: 15px;
+}
+ul {
+  list-style: none;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  border-radius: 15px;
+  background-color: #dc9f9f;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+#sidebar a {
+  margin-left: 40%;
+}
+
+.menuButton {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+}
+.container p {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+/* CSS */
+.button-45 {
+  align-items: center;
+  background-color: #ffe7e7;
+  background-position: 0 0;
+  border: 1px solid #fee0e0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #d7766d;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg)
+    none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+  outline: 0;
+}
+.button-45:active {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+.button-45:hover {
+  background-color: #ffe3e3;
+  border-color: #faa4a4;
+}
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+  background-color: #d33a2c;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #fee0e0;
+  color: rgb(101, 25, 105);
+}
+
+@media (max-width: 867px) {
+  .hideOnmobile {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+  #MenuItems a {
+    margin-right: 0;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container p {
+    font-weight: 200;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 400px) {
+  #sidebar {
+    width: 100%;
+  }
+  #sidebar a {
+    margin-left: 30%;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lily Lane</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="ctn">
+      <nav>
+        <ul id="MenuItems">
+          <li class="logo">Lily Lane</li>
+          <li class="hideOnmobile">
+            <a href="index.html" id="actuel">Home</a>
+          </li>
+          <li class="hideOnmobile"><a href="#">Products</a></li>
+          <li class="hideOnmobile"><a href="#">Contact</a></li>
+          <li class="hideOnmobile"><a href="#">Account</a></li>
+          <li class="menuButton" onclick="showSiebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+                style="fill: white"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+        <ul id="sidebar">
+          <li onclick="hideSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+              style="fill: white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+
+          <li><a href="index.html" id="actuel">Home</a></li>
+          <li><a href="#">Products</a></li>
+
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <h1 style="color: white">Fresh from our Garden</h1>
+        <p>
+          We will help you find the best bouquet of fresh flowers from our
+          garden. <br />
+          Whether you're celebrating a special occasion or simply want to
+          brighten someone's day,<br />
+          our selection of vibrant blooms is sure to delight.
+        </p>
+        <button class="button-45" role="button">Buy Now</button>
+      </div>
+    </div>
+
+    <script>
+      function showSiebar() {
+        const sidebar = document.querySelector("#sidebar");
+        sidebar.style.display = "block";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector("#sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
